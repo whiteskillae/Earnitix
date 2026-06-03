@@ -29,11 +29,11 @@ export function MinimalFooter() {
 	];
 
 	const socialLinks = [
-		{ icon: <MessageCircle className="size-4" />, link: '#' },
-		{ icon: <Camera className="size-4" />, link: '#' },
-		{ icon: <SendHorizontal className="size-4" />, link: '#' },
-		{ icon: <Video className="size-4" />, link: '#' },
-        { icon: <Briefcase className="size-4" />, link: '#' },
+		{ icon: <MessageCircle className="size-4" />, link: 'https://discord.com/invite/earnetix', label: 'Discord' },
+		{ icon: <Camera className="size-4" />, link: 'https://instagram.com/earnetix', label: 'Instagram' },
+		{ icon: <SendHorizontal className="size-4" />, link: 'https://t.me/earnetix', label: 'Telegram' },
+		{ icon: <Video className="size-4" />, link: 'https://youtube.com/@earnetix', label: 'YouTube' },
+        { icon: <Briefcase className="size-4" />, link: 'https://linkedin.com/company/earnetix', label: 'LinkedIn' },
 	];
 
 	return (
@@ -57,6 +57,7 @@ export function MinimalFooter() {
 							{socialLinks.map((item, i) => (
 								<a
 									key={i}
+									aria-label={item.label}
 									className="hover:bg-primary/10 hover:text-primary rounded-xl border border-white/10 p-3 transition-all text-slate-400"
 									target="_blank"
 									href={item.link}
@@ -108,7 +109,7 @@ export function MinimalFooter() {
                                     placeholder="Enter your email" 
                                     className="w-full bg-white/5 border border-white/10 rounded-l-2xl px-5 py-4 text-sm text-white focus:outline-none focus:border-primary/50 transition-colors"
                                 />
-                                <button className="bg-primary text-white px-6 rounded-r-2xl hover:bg-primary/90 transition-all flex items-center justify-center group-hover:px-8">
+                                <button aria-label="Subscribe to newsletter" className="bg-primary text-white px-6 rounded-r-2xl hover:bg-primary/90 transition-all flex items-center justify-center group-hover:px-8">
                                     <ArrowRight className="size-5" />
                                 </button>
                             </div>
@@ -121,9 +122,9 @@ export function MinimalFooter() {
 				<div className="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-500">
 					<p>© {year} EARNETIX CREATOR HUB. ALL RIGHTS RESERVED.</p>
                     <div className="flex gap-8">
-                        <Link href="#" className="hover:text-white transition-colors">Privacy</Link>
-                        <Link href="#" className="hover:text-white transition-colors">Terms</Link>
-                        <Link href="#" className="hover:text-white transition-colors">Cookies</Link>
+                        <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
+                        <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>
+                        <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookies</Link>
                     </div>
 				</div>
 			</div>

@@ -17,13 +17,16 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://earnetix.com"),
+  metadataBase: new URL("https://www.earnetix.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "Earnetix – Earn Through Content. Grow with Skills.",
     template: "%s | Earnetix",
   },
   description:
-    "Earnetix is a creator-driven earning platform where you make money by creating reels, writing blogs, and completing digital tasks. Structured tasks, fair payouts, and a dedicated creator space.",
+    "Earnetix is India's leading creator earning platform. Earn money online in India by creating reels, writing blogs, and completing digital tasks.",
   keywords: [
     "earn money online",
     "creator earning platform",

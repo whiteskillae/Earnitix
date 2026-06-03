@@ -99,11 +99,11 @@ export default function HomePage() {
           <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.08 }}
             className="text-5xl sm:text-6xl md:text-7xl font-black leading-[1.05] tracking-tighter font-heading mb-6"
           >
-            Earn Through{" "}
+            Earn Money Online{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-violet-400 to-emerald-400">
-              Content.
+              in India
             </span>
-            <br />Grow with Skills.
+            <br />as a Content Creator.
           </motion.h1>
 
           <motion.p initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, delay: 0.16 }}
@@ -144,7 +144,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4">What is Earnetix?</p>
-              <h2 className="text-4xl md:text-5xl font-black font-heading tracking-tight text-white mb-6">A task marketplace for creators.</h2>
+              <h2 className="text-4xl md:text-5xl font-black font-heading tracking-tight text-white mb-6">A task marketplace for Indian creators.</h2>
               <p className="text-slate-400 leading-relaxed mb-4">
                 Earnetix operates as a task marketplace for creators. Brands, campaigns, or the Earnetix team publish tasks — and creators complete them to earn money.
               </p>
@@ -176,7 +176,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center mb-16">
             <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-4">Earning Methods</p>
-            <h2 className="text-4xl md:text-5xl font-black font-heading tracking-tight text-white mb-4">Five ways to earn.</h2>
+            <h2 className="text-4xl md:text-5xl font-black font-heading tracking-tight text-white mb-4">Five ways to earn money online.</h2>
             <p className="text-slate-400 max-w-xl mx-auto text-sm">Every income stream is based on active content creation — not passive consumption.</p>
           </div>
 
@@ -227,7 +227,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6 relative z-10">
           <div className="text-center mb-16">
             <p className="text-xs font-bold text-violet-400 uppercase tracking-widest mb-4">Workflow</p>
-            <h2 className="text-4xl md:text-5xl font-black font-heading tracking-tight text-white mb-4">From sign-up to payout.</h2>
+            <h2 className="text-4xl md:text-5xl font-black font-heading tracking-tight text-white mb-4">How to earn: from sign-up to payout.</h2>
             <p className="text-slate-400 max-w-xl mx-auto text-sm">Six clear steps. No complexity.</p>
           </div>
 
@@ -259,7 +259,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl px-6">
           <div className="text-center mb-12">
             <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Quick Answers</p>
-            <h2 className="text-3xl font-black font-heading tracking-tight text-white mb-3">Common Questions</h2>
+            <h2 className="text-3xl font-black font-heading tracking-tight text-white mb-3">Common Questions About Earning</h2>
           </div>
           <div className="space-y-3">
             {FAQS.map(({ q, a }) => (

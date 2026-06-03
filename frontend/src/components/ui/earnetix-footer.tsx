@@ -15,19 +15,19 @@ const LINKS = {
     { label: 'Community Discord', href: '#' },
   ],
   legal: [
-    { label: 'Privacy Policy', href: '#' },
-    { label: 'Terms of Service', href: '#' },
-    { label: 'Cookie Policy', href: '#' },
+    { label: 'Privacy Policy', href: '/privacy-policy' },
+    { label: 'Terms of Service', href: '/terms-of-service' },
+    { label: 'Cookie Policy', href: '/cookie-policy' },
     { label: 'Security', href: '#' },
   ],
 };
 
 const SOCIALS = [
-  { icon: MessageCircle, label: 'Discord', href: '#' },
-  { icon: Camera, label: 'Instagram', href: '#' },
-  { icon: SendHorizontal, label: 'Telegram', href: '#' },
-  { icon: Video, label: 'YouTube', href: '#' },
-  { icon: Briefcase, label: 'LinkedIn', href: '#' },
+  { icon: MessageCircle, label: 'Discord', href: 'https://discord.com/invite/earnetix' },
+  { icon: Camera, label: 'Instagram', href: 'https://instagram.com/earnetix' },
+  { icon: SendHorizontal, label: 'Telegram', href: 'https://t.me/earnetix' },
+  { icon: Video, label: 'YouTube', href: 'https://youtube.com/@earnetix' },
+  { icon: Briefcase, label: 'LinkedIn', href: 'https://linkedin.com/company/earnetix' },
 ];
 
 export function EarnetixFooter() {
@@ -105,7 +105,7 @@ export function EarnetixFooter() {
                   placeholder="your@email.com"
                   className="flex-1 bg-white/5 border border-white/10 rounded-l-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500/50 min-w-0"
                 />
-                <button className="bg-indigo-600 hover:bg-indigo-500 text-white px-4 rounded-r-xl transition-colors flex items-center justify-center">
+                <button aria-label="Subscribe to newsletter" className="bg-indigo-600 hover:bg-indigo-500 text-white px-4 rounded-r-xl transition-colors flex items-center justify-center">
                   <Mail className="w-4 h-4" />
                 </button>
               </div>
